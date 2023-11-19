@@ -1,0 +1,129 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+body{
+    background-color: #1b1b1b;
+    font-family: "Poppins",sans-serif;
+}
+.navbar{
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 77%;
+    background-color: #1b1b1b;
+    /* background-color: aliceblue; */
+    border-bottom: 1px solid white;
+}
+
+.logo img{
+    height: 5rem;
+    width: 12rem;
+}
+.logout{
+    height: 2.5rem;
+    width: 8rem;
+    background-color: #1b1b1b;
+    border: 3px solid rgb(0, 201, 0);
+    border-radius: 10px;
+    color: rgb(0, 201, 0);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+}
+.logout:hover{
+    border-color: white;
+    color: white;
+}
+
+.mainbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    margin-top: 2.5rem;
+    font-size: 30px;
+    background: linear-gradient(to right bottom,#57C84D,#ABE098);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.infocont{
+    width: 100%;
+    padding: 50px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 70%;
+    margin-top: 20px;
+    color: rgb(182, 182, 182);
+
+}
+
+.container h1{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.container input{
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #363636;
+    box-shadow: 1.5px 1.5px 10px 1px black;
+    outline: none;
+    
+}
+
+.container.ph input{
+    width: 450px;
+}
+
+.container.eid input{
+    width: 500px;
+}
+
+.container.gen input{
+    width: 300px;
+}
+
+.submit{
+        margin-top: 10px;
+    margin-bottom: 20px;
+}
+.plain{
+    box-shadow: none;
+}
+
+.submitbtn{
+    height: 2.5rem;
+    width: 8rem;
+    background-color: #1b1b1b;
+    border: 3px solid rgb(0, 201, 0);
+    border-radius: 10px;
+    color: rgb(0, 201, 0);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+}
+
+.submitbtn:hover{
+    border-color: white;
+    color: white;
+}
+
+/* Existing styles */

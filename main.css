@@ -1,0 +1,255 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #1b1b1b;
+    background-image: url("./Assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.nav{
+    height: 4rem;
+    width: 100%;
+    background-color: #1b1b1b46;
+    backdrop-filter: blur(10px);
+    /* background-color    : red; */
+}
+.navlogo{
+    height: 4rem;
+    width: 10rem;
+    margin-left: 1rem;
+}
+.searchbar{
+    background-color: #1b1b1b;
+    margin-left: 48rem;
+    transform: translateY(-1.7rem);
+    height: 2rem;
+    width: 20rem;
+    border-radius: 6px;
+    border: 2px solid rgb(100, 100, 100);
+    color: white;
+    padding-left: 5px;
+}
+.coins{
+    background-color: #1b1b1b;
+    height: 1.8rem;
+    width: 4rem;
+    transform: translateY(-1.7rem);
+    margin-left: 0.5rem;
+    border-radius: 6px;
+    border: 2px solid rgb(100, 100, 100);
+    color: white;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.wallet{
+    margin-left: -5.5rem;
+    transform: translateY(-24px);
+}
+
+.search-results-box {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1b1b1b;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 21.6%;
+    display: none;
+    z-index: 1;
+    color: white;
+    margin-left: 59.2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    scrollbar-color: #1b1b1b;
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    font-family:'Telefon Black', Sans-Serif;
+}
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background-color: #090909;
+}
+.profile{
+    float: right;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: rgb(0, 201, 0);
+    border: 2px solid #1b1b1b;
+    margin-right: 2rem;
+    margin-top: .7rem;
+    color:#1b1b1b;
+}
+.profile:hover{
+    background-color: rgb(0, 150, 0);
+    color: white;
+    border-color: white;
+}
+.main{
+    display: flex;
+    justify-content: center;
+
+}
+.pushedcode{
+    background-color: #181818;
+    height: 100vh;
+    width: 25vw;
+}
+.codepush{
+    height: 91vh;
+    width: 75vw;
+    /* background-image: url("./Assets/background.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pushedcode ul li{
+    margin-top: 15px;
+}
+.pushedcode h1,.codepush h1{
+    color: white;
+    font-family:'Telefon Black', Sans-Serif;
+    margin-top: 1.5rem;
+    font-size: 40px;
+    background: linear-gradient(to right bottom,#57C84D,#ABE098);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: changeGradient 8s infinite ease;
+}
+.inputs{
+    height:33.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    height: 4rem;
+    width: 100%;    
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.details,.code{
+    height: 30rem;
+    width: 50%;
+}
+.details{
+    padding-left: 10rem;
+}
+.details h2,.code h2{
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family:'Telefon Black', Sans-Serif;
+}
+.details input,.code input,.code textarea,.details textarea{
+    background-color: #3f3f3f;
+    border-radius: 6px;
+    height: 2rem;
+    border: 0.5px solid rgb(180, 178, 178);
+    width: 20rem;
+    color: white;
+    font-weight: bold;
+    padding-left: 5px;
+    font-family:'Telefon Black', Sans-Serif;
+    padding-top: auto;
+    resize: none;
+}
+
+#codeDescriptionInput{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.details textarea:nth-child(4){
+    height: 10rem;
+}
+.code textarea{
+    width: 400px;
+    height: 24.7rem;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.submit{
+    background-color: #1b1b1b;
+    color: white;
+    font-family:'Telefon Black', Sans-Serif;
+    font-weight: bold;
+    border-radius: 6px;
+    width: 5rem;
+    height: 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 34rem;
+    transform: translateY(-1.5rem);
+}
+.submit:hover{
+    color: rgb(0, 201, 0);
+    border-color: rgb(0, 201, 0);
+}
+
+@keyframes changeGradient {
+    0% {
+        background: linear-gradient(to right bottom, #77f86c, #c7f1b7);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    25% {
+        background: linear-gradient(to right bottom, #ABE098, #57C84D);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: linear-gradient(to right bottom, #57C84D, #ABE098);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(to right bottom, #ABE098, #57C84D);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity as needed */
+    z-index: 2; /* Ensure the overlay is above other elements */
+}

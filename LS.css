@@ -1,0 +1,217 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Habibi&family=Laila:wght@400;500;600;700&family=Pacifico&family=Podkova:wght@500&family=Poppins&family=Roboto:wght@100&family=Space+Grotesk:wght@500&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-image: url("./Assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar{
+    width: 100%;
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    background-image: url("./Assets/navlogo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10rem;
+    height: 55px;
+    margin-left: 50px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110vh;
+}
+
+.form-box{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+    justify-content: center;
+}
+
+.register-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+}
+
+.login-container{
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+}
+
+
+.top span{
+    color: #ffffff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top span a{
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 5px;
+    
+}
+
+header{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.329);
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: 0.5px solid rgba(128, 128, 128, 0.664);
+    border-radius: 30px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+::-webkit-input-placeholder{
+    color: #ffffff;
+}
+
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #ffffff;
+}
+
+.submitbut{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+
+.submitbut:hover{
+    background: rgba(65, 64, 64, 0.822);
+    box-shadow: 1px 5px 7px 1px rgbs(255,255,255,0.5);
+    color: white;
+    border: 1px solid white;
+}
+
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+
+.two label a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.two label a:hover{
+    text-decoration: underline;
+
+}
+
+@media only screen and (max-width: 540px){
+    .wrapper{
+        min-height: 100vh ;
+    }
+
+    .form-box{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .register-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .register-container .two-forms{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    display: none; /* Initially hide the loader */
+}
+
+.loader img {
+    width: 50px; /* Adjust the size of the loader */
+}
+
+
+.loader-circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #3498db; /* Adjust the border color */
+    border-top: 5px solid  rgb(0, 201, 0);;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

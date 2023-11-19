@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNest-Sign Up</title>
+    <link rel="stylesheet" href="./LS.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <a href="#">
+                <div class="logo"></div>
+            </a>
+        </div>
+
+        <div class="form-box">
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Have an Account? <a href="ls.html#login">Login</a></span>
+                    <header>Sign Up</header>
+                </div>
+
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Firstname" id="firstname" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Lastname" id="lastname" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email" id="email" required>
+                    <i class="bx bx-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password" id="password" required>
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" class="submitbut" value="Register" id="registerButton">
+                </div>
+
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" name="" id="register-check">
+                        <label for="register-check">Remember Me</label>
+                    </div>
+
+                    <div class="two">
+                        <label><a href="#">Terms & Condition</a></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGIN BOX -->
+
+            <div class="login-container" id="login">
+                <div class="top">
+                    <span>Don't Have an account ?<a href="ls.html#register">Sign Up</a></span>
+                    <header>Log In</header>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Username or Email" id="loginUsername" required>
+                    <i class="bx bx-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password" id="loginPassword" required>
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+
+                <!-- Add a login button to trigger login -->
+                <div class="input-box">
+                    <input type="submit" class="submitbut" value="Log In" id="loginButton">
+                </div>
+
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" name="" id="login-check">
+                        <label for="login-check">Remember Me</label>
+                    </div>
+
+                    <div class="two">
+                        <label><a href="#">Forgot password ?</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="loader" class="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+
+    <script src="./LS.js"></script>
+</body>
+
+</html>

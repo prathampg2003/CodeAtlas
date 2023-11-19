@@ -1,0 +1,164 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    
+    background-image: url("./Assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.nav{
+    height: 4rem;
+    width: 100%;
+    background-color: #1b1b1b5e;
+    backdrop-filter: blur(10px);
+    /* background-color    : red; */
+}
+.navlogo{
+    height: 4rem;
+    width: 10rem;
+    margin-left: 1rem;
+}
+.profile{
+    float: right;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: rgb(0, 201, 0);
+    border: 2px solid #1b1b1b;
+    margin-right: 2rem;
+    margin-top: .7rem;
+    color:#1b1b1b;
+}
+.profile:hover{
+    background-color: rgb(0, 150, 0);
+    color: white;
+    border-color: white;
+}
+.distribution{
+    display: flex;
+    justify-content: center;
+}
+.header h1{
+    font-size: 6em;
+    font-family:'Telefon Black', Sans-Serif;
+    color: white;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right bottom,#57C84D,#ABE098);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: changeGradient 8s infinite ease;
+}
+.details{
+    height: 30.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchedcode{
+    position: absolute;
+    left: 300px;
+    width: 50%;
+    height: 27rem;
+    background-color: rgba(69, 69, 69, 0.479);
+    backdrop-filter: blur(10px);
+    border-radius: 20px 20px 20px 20px;
+}
+.dummy{
+    width: 5%;
+    height: 27rem;
+    margin-right: 10rem;
+    border-radius: 0 20px 20px 0;
+    background-color: rgba(69, 69, 69, 0.479);
+    backdrop-filter: blur(10px);
+    
+}
+.useremail{
+    color: white;
+    font-size: 1.4em;
+    font-family:'Telefon Black', Sans-Serif;
+    color: white;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+.code{
+    width: 10rem;
+    color: white;
+    font-size: 1.4em;
+    font-family:'Telefon Black', Sans-Serif;
+    color: white;
+    margin-left:30rem;
+    transform: translateY(-19rem);
+}
+
+
+/* Add the following CSS to details.css */
+.textbox {
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #000000;
+    color: white;
+    font-family: 'Telefon Black', Sans-Serif;
+    font-weight: bold;
+    height: 21rem;
+    width: 24rem;
+    box-shadow: 4px 2px 10px rgb(53, 53, 53);
+    outline: none;
+    border-radius: 20px;
+    resize: none;
+    overflow-y: auto;
+    border: 1px solid rgb(63, 62, 62);
+    box-shadow: 3px 3px 15px 0.5px rgb(85, 85, 85);
+    transition: all 0.3s ease;
+    transform: translateY(-1rem);
+    scrollbar-color: black #1b1b1b; /* Set the scrollbar thumb and track color */
+}
+
+.textbox::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as needed */
+}
+
+.textbox::-webkit-scrollbar-thumb {
+    background-color: black; /* Set the scrollbar thumb color */
+    border-radius: 10px; /* Set the border radius for the thumb */
+}
+
+.textbox::-webkit-scrollbar-track {
+    background-color: #1b1b1b; /* Set the scrollbar track color */
+    border-radius: 10px; /* Set the border radius for the track */
+}
+
+
+
+
+@keyframes changeGradient {
+    0% {
+        background: linear-gradient(to right bottom, #77f86c, #c7f1b7);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    25% {
+        background: linear-gradient(to right bottom, #ABE098, #57C84D);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: linear-gradient(to right bottom, #57C84D, #ABE098);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(to right bottom, #ABE098, #57C84D);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}

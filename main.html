@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAtlas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="Assets/navlogo.png" class="navlogo" alt="logo">
+            <input type="search" name="Search" class="searchbar" placeholder="Search" id="searchQuery">
+            <a href="redeem.html"><input type="text" class="coins" readonly><i class="fa-solid fa-coins wallet" style="color: #d1d416;"></i></a>
+            <a href="profile.html"><button class="profile"><i class="fa-solid fa-user fa-xl"></i></button></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="pushedcode">
+            <div class="header">
+                <h1>Your Codes</h1>
+            </div>
+            <ul class="code-list" id="codeList" style="color: white;list-style-type: none; font-family: 'Telefon Black', Sans-Serif; margin-left:2rem;margin-top: 2rem;font-weight: bold; cursor: pointer;overflow: hidden;width: 300px;text-align: center;">
+                <!-- This is where the user's pushed codes will be displayed -->
+            </ul>
+        </div>
+        <div class="codepush">
+            <div class="header">
+                <h1>Push a code</h1>
+            </div>
+            <div class="inputs">
+                <div class="details">
+                    <h2>Title of the code</h2>
+                    <input type="text" id="codeNameInput" required>
+                    <h2>Details about the code</h2>
+                    <textarea name="" id="codeDescriptionInput" cols="30" rows="20"></textarea>
+                    <h2>Language of the code</h2>
+                    <input type="text" name="" id="codeLanguageInput" required>
+                </div>
+                <div class="code">
+                    <h2>Code</h2>
+                    <textarea name="" id="codeContentInput" cols="30" rows="100"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="submit" onclick="pushCode()">Submit</button>
+        </div>
+    </div>
+
+    <div class="search-results-box" id="searchResultsBox"></div>
+    <div id="loader" class="loader"></div>
+    <div id="overlay" class="overlay"></div>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/2216f47381.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+</body>
+
+</html>

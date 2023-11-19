@@ -1,0 +1,162 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #1b1b1b;
+    background-image: url("./Assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.nav{
+    height: 4rem;
+    width: 100%;
+    background-color: #1b1b1b46;
+    backdrop-filter: blur(10px);
+    /* background-color    : red; */
+}
+.navlogo{
+    height: 4rem;
+    width: 10rem;
+    margin-left: 1rem;
+}   
+.coins{
+    background-color: #1b1b1b;
+    height: 1.8rem;
+    width: 4rem;
+    transform: translateY(-1.7rem);
+    margin-left: 68.5rem;
+    border-radius: 6px;
+    border: 2px solid rgb(100, 100, 100);
+    color: white;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.wallet{
+    margin-left: -5.5rem;
+    transform: translateY(-24px);
+}
+.profile{
+    float: right;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: rgb(0, 201, 0);
+    border: 2px solid #1b1b1b;
+    margin-right: 2rem;
+    margin-top: .7rem;
+    color:#1b1b1b;
+}
+.profile:hover{
+    background-color: rgb(0, 150, 0);
+    color: white;
+    border-color: white;
+}
+.gifts{
+    margin-top: 2rem;
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.gifts2{
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.pointredeem h3{
+    margin-top: 7px;
+}
+.items{
+    height: 17rem;
+    width: 20rem;
+    background-color: #1b1b1b;
+    margin-top: 2.4rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgb(35, 35, 35);
+}
+.imagediv{
+    height: 13rem;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    justify-content: center;
+    display: flex;
+    background-color: #1e1e1e;
+}
+.hoodie{
+    height: 13rem;
+    width: 10rem;
+}
+.cap{
+    height: 12rem;
+    width: 18rem;
+}
+.book{
+    height: 12rem;
+    width: 14rem;
+}
+.bag{
+    height: 12rem;
+    width: 17rem;
+}
+.card{
+    height: 12rem;
+    width: 15rem;
+}
+.chocolate{
+    height: 12rem;
+    width: 12rem;
+}
+.pointredeem{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15px;
+    color: white;
+    font-family:'Telefon Black', Sans-Serif;
+}
+.redeem{
+    background-color: black;
+    color: white;
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+.redeem {
+    border: none;
+    color: #ffffff;
+    outline: none;
+    position: relative;
+  }
+  
+  .redeem::before,
+  .redeem::after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .redeem::before {
+    border-top: 2px solid #ffffff;
+    right: 0;
+    top: -4px;
+  }
+  
+  .redeem::after {
+    border-bottom: 2px solid #ffffff;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .redeem:hover::before,
+  .redeem:hover::after {
+    width: 100%;
+  }
