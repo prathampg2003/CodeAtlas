@@ -7,3 +7,6 @@ Following are the steps to use our website:
 3) On Successful login you will be redirected to the main page of our website where you can upload your code(which is then saved in the database) and see your previous uploads as well.
 4) A Search Bar is available to search the codes written by any developer.
 5) One clicking the reward points you will be redirected to the offer page.(Reward points can be gained by uploading code).
+
+![image](https://github.com/pg348/CodeAtlas/assets/89197939/6028dd03-29ba-46cb-bbd1-12b2756c61c7)
+
